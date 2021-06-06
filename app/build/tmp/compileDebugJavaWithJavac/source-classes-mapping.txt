@@ -1,0 +1,4 @@
+com/example/supercalculator/MainActivity.java
+ com.example.supercalculator.MainActivity
+com/example/supercalculator/BuildConfig.java
+ com.example.supercalculator.BuildConfig

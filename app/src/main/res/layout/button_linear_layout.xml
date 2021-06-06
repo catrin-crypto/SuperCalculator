@@ -11,6 +11,27 @@
         android:layout_height="wrap_content">
 
         <Button
+            android:id="@+id/C_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color2"
+            android:text="@string/c"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:id="@+id/del_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/del"
+            android:textSize="@dimen/button_text_size"
+            android:backgroundTint="@color/button_color2"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -101,9 +122,9 @@
             android:id="@+id/button8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
             android:text="@string/_8"
-            android:textSize="@dimen/button_text_size"
-            android:backgroundTint="@color/button_color"/>
+            android:textSize="@dimen/button_text_size" />
 
         <Button
             android:id="@+id/button9"

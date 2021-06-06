@@ -4,11 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/abacus"
+    android:background="@drawable/multicolor"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
+  <TextView
+      android:id="@+id/operationField"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toTopOf="@id/include"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:textSize="@dimen/inputTextSize"
+      android:text=""/>
   <include
       android:id="@+id/include"
       layout="@layout/button_linear_layout"
