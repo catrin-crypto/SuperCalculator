@@ -6,17 +6,32 @@
     android:layout_height="match_parent"
     android:background="@drawable/multicolor"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    tools:context=".MainActivity"
+    android:id="@+id/constraint_layout">
   <TextView
       android:id="@+id/operationField"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      app:layout_constraintBottom_toTopOf="@id/include"
+      app:layout_constraintBottom_toTopOf="@id/result"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
       android:textSize="@dimen/inputTextSize"
-      android:text=""/>
+      android:text=""
+      android:textStyle="italic"/>
+
+  <TextView
+      android:id="@+id/result"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text=""
+      android:textColor="@color/current_result"
+      android:textSize="@dimen/result_text_size"
+      android:textStyle="italic"
+      app:layout_constraintBottom_toTopOf="@+id/include"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/operationField" />
   <include
       android:id="@+id/include"
       layout="@layout/button_linear_layout"
@@ -28,6 +43,5 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="0.86" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+package com.example.supercalculator;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.widget.Button;
+import android.widget.TextView;
+import java.util.Locale;
+
+public class CalculatorButton extends androidx.appcompat.widget.AppCompatButton {
+
+    public CalculatorButton(Context context) {
+        super(context);
+    }
+
+    public CalculatorButton(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
+
+    public CalculatorButton(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+    }
+
+    public void setMyClickListener(TextView textInput) {
+        setOnClickListener(v -> {
+            if (v instanceof Button) {
+                textInput.setText(String.format(Locale.getDefault(), "%s",
+                        textInput.getText().toString() + ((Button) v).getText()));
+            }
+        });
+    }
+
+    public void setButtonProcessor(ButtonProcessor buttonProcessor) {
+        setOnClickListener(v -> {
+            if (v instanceof Button) {
+                buttonProcessor.processButton((Button) v);
+
+            }
+        });
+    }
+}

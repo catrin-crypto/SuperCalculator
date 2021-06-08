@@ -24,12 +24,50 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc70275a-fc72-457d-9147-9963b13c1bb6" name="Default Changelist" comment="Lesson 2">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/multicolor.jpg" afterDir="false" />
+    <list default="true" id="fc70275a-fc72-457d-9147-9963b13c1bb6" name="Default Changelist" comment="Improved Lesson 2">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/supercalculator/ActionButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/supercalculator/ButtonProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/supercalculator/CalculatorButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/supercalculator/CommaButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/supercalculator/DigitButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/supercalculator/OperationButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/landscape_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/supercalculator/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/supercalculator/MainActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/supercalculator/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/supercalculator/MainActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_button_linear_layout.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_button_linear_layout.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/supercalculator/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/supercalculator/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/abacus.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/button_linear_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/button_linear_layout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,13 +84,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile" />
         <option value="valueResourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1tS39ywgnfgF73srAY5ZQyEkJ1C" />
@@ -66,9 +109,29 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android-custom-viewC:/Users/Katyushka/AndroidStudioProjects/SuperCalculator_1/app/src/main/java/DisplayedButton.java_SELECTED" value="DisplayedButton" />
+    <property name="android-custom-viewC:/Users/Katyushka/AndroidStudioProjects/SuperCalculator_1/app/src/main/java/com/example/supercalculator/ActionButton.java_SELECTED" value="ActionButton" />
+    <property name="android-custom-viewC:/Users/Katyushka/AndroidStudioProjects/SuperCalculator_1/app/src/main/java/com/example/supercalculator/CalculatorButton.java_SELECTED" value="CalculatorButton" />
+    <property name="android-custom-viewC:/Users/Katyushka/AndroidStudioProjects/SuperCalculator_1/app/src/main/java/com/example/supercalculator/ComaButton.java_SELECTED" value="CommaButton" />
+    <property name="android-custom-viewC:/Users/Katyushka/AndroidStudioProjects/SuperCalculator_1/app/src/main/java/com/example/supercalculator/CommaButton.java_SELECTED" value="CommaButton" />
+    <property name="android-custom-viewC:/Users/Katyushka/AndroidStudioProjects/SuperCalculator_1/app/src/main/java/com/example/supercalculator/DigitButton.java_SELECTED" value="DigitButton" />
+    <property name="android-custom-viewC:/Users/Katyushka/AndroidStudioProjects/SuperCalculator_1/app/src/main/java/com/example/supercalculator/DisplayedButton.java_SELECTED" value="CalculatorButton" />
+    <property name="android-custom-viewC:/Users/Katyushka/AndroidStudioProjects/SuperCalculator_1/app/src/main/java/com/example/supercalculator/OperationButton.java_SELECTED" value="OperationButton" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="multi-representation-previewC:/Users/Katyushka/AndroidStudioProjects/SuperCalculator_1/app/src/main/java/DisplayedButton.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/Katyushka/AndroidStudioProjects/SuperCalculator_1/app/src/main/java/com/example/supercalculator/ActionButton.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/Katyushka/AndroidStudioProjects/SuperCalculator_1/app/src/main/java/com/example/supercalculator/CalculatorButton.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/Katyushka/AndroidStudioProjects/SuperCalculator_1/app/src/main/java/com/example/supercalculator/ComaButton.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/Katyushka/AndroidStudioProjects/SuperCalculator_1/app/src/main/java/com/example/supercalculator/CommaButton.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/Katyushka/AndroidStudioProjects/SuperCalculator_1/app/src/main/java/com/example/supercalculator/DigitButton.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/Katyushka/AndroidStudioProjects/SuperCalculator_1/app/src/main/java/com/example/supercalculator/DisplayedButton.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/Katyushka/AndroidStudioProjects/SuperCalculator_1/app/src/main/java/com/example/supercalculator/OperationButton.java_selected" value="Custom views" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.supercalculator" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Katyushka\AndroidStudioProjects\SuperCalculator_1\app\src\main\res\drawable" />
       <recent name="C:\Users\Katyushka\AndroidStudioProjects\SuperCalculator\app\src\main\res\drawable" />
@@ -158,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622753975233</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Improved Lesson 2">
+      <created>1623001523647</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623001523647</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,36 +245,81 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lesson 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 2" />
+    <MESSAGE value="Improved Lesson 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved Lesson 2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="526" y="177" key="#com.intellij.ide.util.MemberChooser" timestamp="1623177688181">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="526" y="177" key="#com.intellij.ide.util.MemberChooser/0.0.1440.920@0.0.1440.920" timestamp="1623177688181" />
+    <state x="504" y="330" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1623008796137">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="504" y="330" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.920@0.0.1440.920" timestamp="1623008796137" />
     <state x="301" y="216" key="AndroidCreateResourceFileDialog" timestamp="1622750342796">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="301" y="216" key="AndroidCreateResourceFileDialog/0.0.1440.920@0.0.1440.920" timestamp="1622750342796" />
-    <state x="564" y="251" key="AndroidCreateXmlResourceDialog" timestamp="1623001062572">
+    <state x="564" y="251" key="AndroidCreateXmlResourceDialog" timestamp="1623184562196">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="564" y="251" key="AndroidCreateXmlResourceDialog/0.0.1440.920@0.0.1440.920" timestamp="1623001062572" />
-    <state width="697" height="242" key="GridCell.Tab.0.bottom" timestamp="1623000434894">
+    <state x="564" y="251" key="AndroidCreateXmlResourceDialog/0.0.1440.920@0.0.1440.920" timestamp="1623184562196" />
+    <state x="517" y="207" key="AndroidProcessChooserDialog" timestamp="1623011626487">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="697" height="242" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1623000434894" />
-    <state width="697" height="242" key="GridCell.Tab.0.center" timestamp="1623000434893">
+    <state x="517" y="207" key="AndroidProcessChooserDialog/0.0.1440.920@0.0.1440.920" timestamp="1623011626487" />
+    <state width="1395" height="242" key="GridCell.Tab.0.bottom" timestamp="1623183363724">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="697" height="242" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1623000434893" />
-    <state width="697" height="242" key="GridCell.Tab.0.left" timestamp="1623000434893">
+    <state width="1395" height="242" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1623183363724" />
+    <state width="1395" height="242" key="GridCell.Tab.0.center" timestamp="1623183363724">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="697" height="242" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1623000434893" />
-    <state width="697" height="242" key="GridCell.Tab.0.right" timestamp="1623000434893">
+    <state width="1395" height="242" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1623183363724" />
+    <state width="1395" height="242" key="GridCell.Tab.0.left" timestamp="1623183363724">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="697" height="242" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1623000434893" />
-    <state x="313" y="194" key="Vcs.Push.Dialog.v2" timestamp="1622754009109">
+    <state width="1395" height="242" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1623183363724" />
+    <state width="1395" height="242" key="GridCell.Tab.0.right" timestamp="1623183363724">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="194" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1622754009109" />
+    <state width="1395" height="242" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1623183363724" />
+    <state width="1395" height="41" key="GridCell.Tab.1.bottom" timestamp="1623183333986">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1395" height="41" key="GridCell.Tab.1.bottom/0.0.1440.920@0.0.1440.920" timestamp="1623183333986" />
+    <state width="1395" height="41" key="GridCell.Tab.1.center" timestamp="1623183333985">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1395" height="41" key="GridCell.Tab.1.center/0.0.1440.920@0.0.1440.920" timestamp="1623183333985" />
+    <state width="1395" height="41" key="GridCell.Tab.1.left" timestamp="1623183333985">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1395" height="41" key="GridCell.Tab.1.left/0.0.1440.920@0.0.1440.920" timestamp="1623183333985" />
+    <state width="1395" height="41" key="GridCell.Tab.1.right" timestamp="1623183333985">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1395" height="41" key="GridCell.Tab.1.right/0.0.1440.920@0.0.1440.920" timestamp="1623183333985" />
+    <state x="313" y="194" key="Vcs.Push.Dialog.v2" timestamp="1623001585102">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="313" y="194" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1623001585102" />
+    <state x="528" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1623002140856">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="528" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1623002140856" />
+    <state x="451" y="225" key="extract.method.dialog" timestamp="1623178488069">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="451" y="225" key="extract.method.dialog/0.0.1440.920@0.0.1440.920" timestamp="1623178488069" />
+    <state x="375" y="208" key="run.anything.popup" timestamp="1623183709657">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="375" y="208" key="run.anything.popup/0.0.1440.920@0.0.1440.920" timestamp="1623183709657" />
+    <state x="382" y="195" width="672" height="678" key="search.everywhere.popup" timestamp="1623099907163">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="382" y="195" width="672" height="678" key="search.everywhere.popup/0.0.1440.920@0.0.1440.920" timestamp="1623099907163" />
   </component>
 </project>
