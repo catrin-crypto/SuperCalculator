@@ -12,16 +12,18 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     static final String STATE_BUTTON_PROCESSOR = "butProcState1";
-    private TextView textInput;
-    private TextView result;
+    private TextView inputStackView;
+    private TextView resultView;
+
     private ButtonProcessor buttonProcessor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        textInput = findViewById(R.id.operationField);
-        result = findViewById(R.id.result);
-        buttonProcessor = new ButtonProcessor(textInput,result);
+        inputStackView = findViewById(R.id.operationField);
+        resultView = findViewById(R.id.result);
+        buttonProcessor = new ButtonProcessor();
+
         ViewGroup group = (ViewGroup) findViewById(R.id.include);
         View v;
         for (int i = 0; i < group.getChildCount(); i++) {
@@ -31,12 +33,15 @@ public class MainActivity extends AppCompatActivity {
                 View subView;
                 for (int j = 0; j < subGroup.getChildCount(); j++) {
                     subView = subGroup.getChildAt(j);
-                    if (subView instanceof CalculatorButton)
+                    if (subView instanceof CalculatorButton) {
+                        ((CalculatorButton) subView).setRenewDisplayedDataAdapter(
+                                new RenewDisplayedDataAdapter(inputStackView, resultView,buttonProcessor));
                         ((CalculatorButton) subView).setButtonProcessor(buttonProcessor);
+
+                    }
                 }
             }
         }
-     result = findViewById(R.id.result);
     }
 
     @Override
@@ -49,6 +54,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         buttonProcessor = savedInstanceState.getParcelable(STATE_BUTTON_PROCESSOR);
-        buttonProcessor.renewDisplayedData();
     }
 }

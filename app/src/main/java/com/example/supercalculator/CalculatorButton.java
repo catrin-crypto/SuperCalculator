@@ -7,7 +7,7 @@ import android.widget.TextView;
 import java.util.Locale;
 
 public class CalculatorButton extends androidx.appcompat.widget.AppCompatButton {
-
+    private RenewDisplayedDataAdapter renewDisplayedDataAdapter;
     public CalculatorButton(Context context) {
         super(context);
     }
@@ -28,12 +28,14 @@ public class CalculatorButton extends androidx.appcompat.widget.AppCompatButton 
             }
         });
     }
-
+    public void setRenewDisplayedDataAdapter(RenewDisplayedDataAdapter renewDisplayedDataAdapter){
+        this.renewDisplayedDataAdapter = renewDisplayedDataAdapter;
+    }
     public void setButtonProcessor(ButtonProcessor buttonProcessor) {
         setOnClickListener(v -> {
             if (v instanceof Button) {
                 buttonProcessor.processButton((Button) v);
-
+                renewDisplayedDataAdapter.run();
             }
         });
     }

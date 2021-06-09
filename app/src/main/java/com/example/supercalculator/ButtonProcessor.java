@@ -6,17 +6,13 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.Locale;
+import java.util.function.Function;
 
 public class ButtonProcessor implements Parcelable {
-    private TextView stackView;
-    private TextView resultView;
+    private final static String OPERATIONS_CHARS = "+-/*";
     private String inputStack;
-    private final static String operationsChars = "+-/*";
-
-    public ButtonProcessor(TextView stackView, TextView resultView) {
-        this.stackView = stackView;
-        this.resultView = resultView;
-        this.inputStack = "";
+    public ButtonProcessor() {
+         this.inputStack = "";
     }
 
     protected ButtonProcessor(Parcel in) {
@@ -52,7 +48,7 @@ public class ButtonProcessor implements Parcelable {
                 if ((inputStack.length() == 1 && inputStack.charAt(0) == '-')) {
                     inputStack = "";
                 } else if (inputStack.length() > 0 &&
-                        operationsChars.indexOf(inputStack.charAt(inputStack.length() - 1)) > -1) {
+                        OPERATIONS_CHARS.indexOf(inputStack.charAt(inputStack.length() - 1)) > -1) {
                     inputStack = inputStack.substring(0, inputStack.length() - 1) + button.getText();
                 } else if (inputStack.length() > 0) {
                     inputStack += button.getText();
@@ -73,15 +69,12 @@ public class ButtonProcessor implements Parcelable {
                 inputStack = getCurrentResult();
             }
         }
-        renewDisplayedData();
+     }
+
+    public String getInputStack(){
+        return inputStack;
     }
 
-    public void renewDisplayedData() {
-        stackView.setText(String.format(Locale.getDefault(), "%s",
-                inputStack));
-        resultView.setText(String.format(Locale.getDefault(), "%s",
-                getCurrentResult()));
-    }
 
     public String getCurrentResult() {
         double res = 0;
@@ -92,7 +85,7 @@ public class ButtonProcessor implements Parcelable {
             if ((curChar >= '0' && curChar <= '9') ||
                     curChar == ',') {
                 operand += curChar;
-            } else if (operationsChars.indexOf(curChar) > -1) {
+            } else if (OPERATIONS_CHARS.indexOf(curChar) > -1) {
                 res = execOperation(res, curOp, operand);
                 curOp = curChar;
                 operand = "0";
@@ -131,7 +124,7 @@ public class ButtonProcessor implements Parcelable {
     public String processLastNumber() {
         String lastNumber = "";
         for (int i = inputStack.length() - 1; i > 0; i--) {
-            if (operationsChars.indexOf(inputStack.charAt(i)) != -1) {
+            if (OPERATIONS_CHARS.indexOf(inputStack.charAt(i)) != -1) {
                 return lastNumber;
             } else lastNumber += inputStack.charAt(i);
         }
