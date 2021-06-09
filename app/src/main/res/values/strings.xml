@@ -15,7 +15,7 @@
     <string name="minus">-</string>
     <string name="plus">+</string>
     <string name="multiply">*</string>
-    <string name="divide">\\</string>
+    <string name="divide">/</string>
     <string name="c">C</string>
     <string name="del">del</string>
 </resources>
