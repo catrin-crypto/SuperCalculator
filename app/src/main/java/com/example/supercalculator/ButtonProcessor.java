@@ -16,7 +16,13 @@ public class ButtonProcessor implements Parcelable {
     }
 
     protected ButtonProcessor(Parcel in) {
+
         inputStack = in.readString();
+    }
+
+    protected ButtonProcessor(String in) {
+
+        inputStack = in;
     }
 
     public static final Creator<ButtonProcessor> CREATOR = new Creator<ButtonProcessor>() {

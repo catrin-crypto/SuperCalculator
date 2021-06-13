@@ -18,7 +18,8 @@
             android:backgroundTint="@color/button_color2"
             android:text="@string/c"
             android:textColor="@color/c_button_text"
-            android:textSize="@dimen/button_text_size" />
+            android:textSize="@dimen/button_text_size"
+            style="@style/button_style"/>
 
         <com.example.supercalculator.ActionButton
             android:id="@+id/del_button"
@@ -27,7 +28,8 @@
             android:backgroundTint="@color/button_color2"
             android:text="@string/del"
             android:textSize="@dimen/button_text_size"
-            android:textColor="@color/egual_sign"/>
+            android:textColor="@color/egual_sign"
+            style="@style/button_style"/>
     </LinearLayout>
 
     <LinearLayout
@@ -41,7 +43,8 @@
             android:backgroundTint="@color/button_color"
             android:text="@string/_1"
             android:textSize="@dimen/button_text_size"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            style="@style/button_style"/>
 
         <com.example.supercalculator.DigitButton
             android:id="@+id/button2"
@@ -50,7 +53,8 @@
             android:backgroundTint="@color/button_color"
             android:text="@string/_2"
             android:textSize="@dimen/button_text_size"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            style="@style/button_style"/>
 
         <com.example.supercalculator.DigitButton
             android:id="@+id/button3"
@@ -59,7 +63,8 @@
             android:backgroundTint="@color/button_color"
             android:text="@string/_3"
             android:textSize="@dimen/button_text_size"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            style="@style/button_style"/>
 
         <com.example.supercalculator.OperationButton
             android:id="@+id/buttonPlusSign"
@@ -68,7 +73,8 @@
             android:backgroundTint="@color/button_color"
             android:text="@string/plus"
             android:textColor="@color/signs"
-            android:textSize="@dimen/button_text_size" />
+            android:textSize="@dimen/button_text_size"
+            style="@style/button_style"/>
     </LinearLayout>
 
     <LinearLayout
@@ -83,7 +89,8 @@
             android:backgroundTint="@color/button_color"
             android:text="@string/_4"
             android:textSize="@dimen/button_text_size"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            style="@style/button_style"/>
 
         <com.example.supercalculator.DigitButton
             android:id="@+id/button5"
@@ -92,7 +99,8 @@
             android:backgroundTint="@color/button_color"
             android:text="@string/_5"
             android:textSize="@dimen/button_text_size"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            style="@style/button_style"/>
 
         <com.example.supercalculator.DigitButton
             android:id="@+id/button6"
@@ -101,7 +109,8 @@
             android:backgroundTint="@color/button_color"
             android:text="@string/_6"
             android:textSize="@dimen/button_text_size"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            style="@style/button_style"/>
 
         <com.example.supercalculator.OperationButton
             android:id="@+id/buttonMinusSign"
@@ -110,7 +119,8 @@
             android:backgroundTint="@color/button_color"
             android:text="@string/minus"
             android:textColor="@color/signs"
-            android:textSize="@dimen/button_text_size" />
+            android:textSize="@dimen/button_text_size"
+            style="@style/button_style"/>
 
     </LinearLayout>
 
@@ -126,7 +136,8 @@
             android:backgroundTint="@color/button_color"
             android:text="@string/_7"
             android:textSize="@dimen/button_text_size"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            style="@style/button_style"/>
 
         <com.example.supercalculator.DigitButton
             android:id="@+id/button8"
@@ -135,7 +146,8 @@
             android:backgroundTint="@color/button_color"
             android:text="@string/_8"
             android:textSize="@dimen/button_text_size"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            style="@style/button_style"/>
 
         <com.example.supercalculator.DigitButton
             android:id="@+id/button9"
@@ -144,7 +156,8 @@
             android:backgroundTint="@color/button_color"
             android:text="@string/_9"
             android:textSize="@dimen/button_text_size"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            style="@style/button_style"/>
 
         <com.example.supercalculator.OperationButton
             android:id="@+id/buttonMultiply"
@@ -153,7 +166,8 @@
             android:backgroundTint="@color/button_color"
             android:text="@string/multiply"
             android:textColor="@color/signs"
-            android:textSize="@dimen/button_text_size" />
+            android:textSize="@dimen/button_text_size"
+            style="@style/button_style"/>
     </LinearLayout>
 
     <LinearLayout
@@ -168,7 +182,8 @@
             android:backgroundTint="@color/button_color"
             android:text="@string/_0"
             android:textSize="@dimen/button_text_size"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            style="@style/button_style"/>
 
         <com.example.supercalculator.CommaButton
             android:id="@+id/buttonPoint"
@@ -177,7 +192,8 @@
             android:backgroundTint="@color/button_color"
             android:text="@string/_point"
             android:textSize="@dimen/button_text_size"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            style="@style/button_style"/>
 
         <com.example.supercalculator.ActionButton
             android:id="@+id/buttonEqualSign"
@@ -185,7 +201,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/egual_sign"
             android:text="@string/_equal_sign"
-            android:textSize="@dimen/button_text_size" />
+            android:textSize="@dimen/button_text_size"
+            style="@style/button_style"/>
 
         <com.example.supercalculator.OperationButton
             android:id="@+id/buttonDivide"
@@ -194,7 +211,8 @@
             android:backgroundTint="@color/button_color"
             android:text="@string/divide"
             android:textColor="@color/signs"
-            android:textSize="@dimen/button_text_size" />
+            android:textSize="@dimen/button_text_size"
+            style="@style/button_style"/>
     </LinearLayout>
 
 </LinearLayout>

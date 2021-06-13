@@ -18,4 +18,6 @@
     <string name="divide">/</string>
     <string name="c">C</string>
     <string name="del">del</string>
+    <string name="light_theme">Light_Theme</string>
+    <string name="night_theme">Night_Theme</string>
 </resources>
