@@ -5,20 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.os.Parcel;
-import android.os.Parcelable;
-import android.os.PersistableBundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
-
-import com.google.android.material.radiobutton.MaterialRadioButton;
 
 import static androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO;
 import static androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES;
@@ -31,27 +26,33 @@ public class MainActivity extends AppCompatActivity {
     static final String STATE_BUTTON_PROCESSOR = "butProcState1";
     private TextView inputStackView;
     private TextView resultView;
-    private ButtonProcessor buttonProcessor;
+    private InputStackProcessor inputStackProcessor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        AppCompatDelegate.setDefaultNightMode(getAppThemeMode(DayStyle));
         setContentView(R.layout.activity_main);
-        initThemeChooser();
+        initTheme();
+        initSettingsButton();
+
         inputStackView = findViewById(R.id.operationField);
         resultView = findViewById(R.id.result);
 
         if (savedInstanceState != null) {
             onRestoreInstanceState(savedInstanceState);
         }
-        if (buttonProcessor == null) {
-            buttonProcessor = new ButtonProcessor();
+        if (inputStackProcessor == null) {
+            inputStackProcessor = new InputStackProcessor();
         }
 
+        initCalculatorMechanics();
+    }
+
+    private void initCalculatorMechanics() {
         ViewGroup group = (ViewGroup) findViewById(R.id.include);
         View v;
-        RenewDisplayedDataAdapter dispAdapter = new RenewDisplayedDataAdapter(inputStackView, resultView, buttonProcessor);
+        RenewDisplayedDataAdapter dispAdapter = new RenewDisplayedDataAdapter(inputStackView,
+                resultView, inputStackProcessor);
         for (int i = 0; i < group.getChildCount(); i++) {
             v = group.getChildAt(i);
             if (v instanceof LinearLayout) {
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                     if (subView instanceof CalculatorButton) {
                         ((CalculatorButton) subView).setRenewDisplayedDataAdapter(
                                 dispAdapter);
-                        ((CalculatorButton) subView).setButtonProcessor(buttonProcessor);
+                        ((CalculatorButton) subView).setButtonProcessor(inputStackProcessor);
                     }
                 }
             }
@@ -70,32 +71,33 @@ public class MainActivity extends AppCompatActivity {
         dispAdapter.run();
     }
 
-    private void initThemeChooser() {
-        initRadioButton(findViewById(R.id.radioButtonLight),
-                DayStyle);
-        initRadioButton(findViewById(R.id.radioButtonNight),
-                NightStyle);
-
-        RadioGroup rg = findViewById(R.id.radioButtons);
-        RadioButton button2check = (RadioButton) rg.getChildAt(getCodeStyle(DayStyle));
-        button2check.setChecked(true);
+    private void initTheme() {
+        int mode = getAppThemeMode(MODE_NIGHT_NO);
+        AppCompatDelegate.setDefaultNightMode(mode);
         ConstraintLayout view = findViewById(R.id.constraint_layout);
-        if (button2check.getId() == R.id.radioButtonNight) {
+        if (mode != MODE_NIGHT_NO) {
             view.setBackgroundResource(R.drawable.thunder);
         } else {
             view.setBackgroundResource(R.drawable.multicolor);
         }
-
     }
 
-    private void initRadioButton(View button, final int codeStyle) {
-        button.setOnClickListener(new View.OnClickListener() {
+    private void initSettingsButton() {
+        Button btnSettings = findViewById(R.id.settings_button);
+        btnSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setAppTheme(codeStyle);
-                recreate();
+                Intent runSettings = new Intent(MainActivity.this, SettingsActivity.class);
+                ActivityInfo activityInfo =
+                        runSettings.resolveActivityInfo(getPackageManager(),
+                                runSettings.getFlags());
+                if (activityInfo != null) {
+                    startActivity(runSettings);
+                }
+
             }
         });
+
     }
 
     private int getAppThemeMode(int codeStyle) {
@@ -107,12 +109,6 @@ public class MainActivity extends AppCompatActivity {
         return sharedPref.getInt(AppTheme, codeStyle);
     }
 
-    private void setAppTheme(int codeStyle) {
-        SharedPreferences sharedPref = getSharedPreferences(NameSharedPreference, MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt(AppTheme, codeStyle);
-        editor.apply();
-    }
 
     private int codeStyleToNightMode(int codeStyle) {
         switch (codeStyle) {
@@ -126,13 +122,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
-        outState.putParcelable(STATE_BUTTON_PROCESSOR, buttonProcessor);
+        outState.putParcelable(STATE_BUTTON_PROCESSOR, inputStackProcessor);
         super.onSaveInstanceState(outState);
     }
 
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        buttonProcessor = savedInstanceState.getParcelable(STATE_BUTTON_PROCESSOR);
+        inputStackProcessor = savedInstanceState.getParcelable(STATE_BUTTON_PROCESSOR);
     }
 }

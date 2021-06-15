@@ -7,19 +7,19 @@ import java.util.Locale;
 public class RenewDisplayedDataAdapter implements Runnable{
     private TextView stackView;
     private TextView resultView;
-    private ButtonProcessor buttonProcessor;
+    private InputStackProcessor inputStackProcessor;
 
-    public RenewDisplayedDataAdapter(TextView stackView, TextView resultView, ButtonProcessor buttonProcessor) {
+    public RenewDisplayedDataAdapter(TextView stackView, TextView resultView, InputStackProcessor inputStackProcessor) {
         this.stackView = stackView;
         this.resultView = resultView;
-        this.buttonProcessor = buttonProcessor;
+        this.inputStackProcessor = inputStackProcessor;
     }
 
     @Override
     public void run() {
         stackView.setText(String.format(Locale.getDefault(), "%s",
-                buttonProcessor.getInputStack()));
+                inputStackProcessor.getInputStack()));
         resultView.setText(String.format(Locale.getDefault(), "%s",
-                buttonProcessor.getCurrentResult()));
+                inputStackProcessor.getCurrentResult()));
     }
 }

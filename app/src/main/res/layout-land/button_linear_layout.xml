@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/button_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.example.supercalculator.ActionButton
+            android:id="@+id/C_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color2"
+            android:text="@string/c"
+            android:textColor="@color/c_button_text"
+            android:textSize="@dimen/button_text_size" />
+
+        <com.example.supercalculator.ActionButton
+            android:id="@+id/del_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color2"
+            android:text="@string/del"
+            android:textColor="@color/egual_sign"
+            android:textSize="@dimen/button_text_size" />
+
+        <com.example.supercalculator.OperationButton
+            android:id="@+id/buttonPlusSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/plus"
+            android:textColor="@color/signs"
+            android:textSize="@dimen/button_text_size" />
+
+        <com.example.supercalculator.OperationButton
+            android:id="@+id/buttonMinusSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/minus"
+            android:textColor="@color/signs"
+            android:textSize="@dimen/button_text_size" />
+
+        <com.example.supercalculator.OperationButton
+            android:id="@+id/buttonMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/multiply"
+            android:textColor="@color/signs"
+            android:textSize="@dimen/button_text_size" />
+
+        <com.example.supercalculator.OperationButton
+            android:id="@+id/buttonDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/divide"
+            android:textColor="@color/signs"
+            android:textSize="@dimen/button_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.example.supercalculator.DigitButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/_1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+
+        <com.example.supercalculator.DigitButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/_2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+
+        <com.example.supercalculator.DigitButton
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/_3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+
+        <com.example.supercalculator.DigitButton
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/_4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+
+        <com.example.supercalculator.DigitButton
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/_5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+
+        <com.example.supercalculator.CommaButton
+            android:id="@+id/buttonPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/_point"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.example.supercalculator.DigitButton
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/_6"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+
+        <com.example.supercalculator.DigitButton
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/_7"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+
+        <com.example.supercalculator.DigitButton
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/_8"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+
+        <com.example.supercalculator.DigitButton
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/_9"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+
+        <com.example.supercalculator.DigitButton
+            android:id="@+id/button0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:text="@string/_0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+
+        <com.example.supercalculator.ActionButton
+            android:id="@+id/buttonEqualSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/egual_sign"
+            android:text="@string/_equal_sign"
+            android:textSize="@dimen/button_text_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

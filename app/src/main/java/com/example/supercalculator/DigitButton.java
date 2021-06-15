@@ -15,4 +15,9 @@ public class DigitButton extends CalculatorButton {
     public DigitButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
+
+    @Override
+    public void modifyInputStackProcessor(InputStackProcessor inputStackProcessor) {
+        inputStackProcessor.appendInputStack((String) this.getText());
+    }
 }
