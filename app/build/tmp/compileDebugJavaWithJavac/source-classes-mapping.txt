@@ -1,5 +1,7 @@
 com/example/supercalculator/CalculatorButton.java
  com.example.supercalculator.CalculatorButton
+com/example/supercalculator/RenewDisplayedDataAdapter.java
+ com.example.supercalculator.RenewDisplayedDataAdapter
 com/example/supercalculator/ActionButton.java
  com.example.supercalculator.ActionButton
 com/example/supercalculator/DigitButton.java
@@ -13,5 +15,6 @@ com/example/supercalculator/ButtonProcessor.java
  com.example.supercalculator.ButtonProcessor$1
 com/example/supercalculator/MainActivity.java
  com.example.supercalculator.MainActivity
+ com.example.supercalculator.MainActivity$1
 com/example/supercalculator/BuildConfig.java
  com.example.supercalculator.BuildConfig

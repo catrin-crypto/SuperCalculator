@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="button_style">
+    <item name="cornerRadius">@dimen/button_corner</item>
+    <item name="strokeWidth">@dimen/button_stroke</item>
+    <item name="strokeColor">@color/button_stroke</item>
+</style>
+</resources>

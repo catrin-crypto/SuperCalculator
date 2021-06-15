@@ -13,4 +13,5 @@
     <color name="button_color2">#E84D041B</color>
     <color name="c_button_text">#F3B52A2A</color>
     <color name="current_result">#432727</color>
+    <color name="button_stroke">#B1ADAD</color>
 </resources>

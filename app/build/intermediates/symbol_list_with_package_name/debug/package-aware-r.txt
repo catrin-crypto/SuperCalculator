@@ -989,6 +989,7 @@ color button_color
 color button_color2
 color button_material_dark
 color button_material_light
+color button_stroke
 color c_button_text
 color cardview_dark_background
 color cardview_light_background
@@ -1247,6 +1248,8 @@ dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen appcompat_dialog_background_inset
+dimen button_corner
+dimen button_stroke
 dimen button_text_size
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
@@ -1550,6 +1553,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen radio_button_text
 dimen result_text_size
 dimen test_mtrl_calendar_day_cornerSize
 dimen tooltip_corner_radius
@@ -1697,6 +1701,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable test_custom_background
+drawable thunder
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -2012,6 +2017,9 @@ id postLayout
 id progress_circular
 id progress_horizontal
 id radio
+id radioButtonLight
+id radioButtonNight
+id radioButtons
 id ratio
 id rectangles
 id result
@@ -2350,6 +2358,7 @@ string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string light_theme
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection
@@ -2402,6 +2411,7 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string multiply
+string night_theme
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -3126,6 +3136,7 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style button_style
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
