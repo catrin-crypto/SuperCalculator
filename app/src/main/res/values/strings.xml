@@ -20,4 +20,6 @@
     <string name="del">del</string>
     <string name="light_theme">Light_Theme</string>
     <string name="night_theme">Night_Theme</string>
+    <string name="return_button">Return</string>
+    <string name="settings_btn">Settings</string>
 </resources>

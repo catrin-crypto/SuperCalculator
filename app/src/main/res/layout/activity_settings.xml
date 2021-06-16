@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+    <RadioGroup
+        android:id="@+id/radioButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="351dp"
+        tools:layout_editor_absoluteY="24dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/light_theme"
+            android:textColor="@color/signs"
+            android:textSize="@dimen/radio_button_text"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/night_theme"
+            android:textColor="@color/signs"
+            android:textSize="@dimen/radio_button_text"
+            android:textStyle="italic" />
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/return_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/radioButtons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/return_button"
+        android:textSize="@dimen/button_text_size"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,13 +3,10 @@ package com.example.supercalculator;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.google.android.material.button.MaterialButton;
 
-import java.util.Locale;
-
-public class CalculatorButton extends MaterialButton {
+public abstract class CalculatorButton extends MaterialButton {
     private RenewDisplayedDataAdapter renewDisplayedDataAdapter;
     public CalculatorButton(Context context) {
         super(context);
@@ -23,21 +20,16 @@ public class CalculatorButton extends MaterialButton {
         super(context, attrs, defStyleAttr);
     }
 
-    public void setMyClickListener(TextView textInput) {
-        setOnClickListener(v -> {
-            if (v instanceof Button) {
-                textInput.setText(String.format(Locale.getDefault(), "%s",
-                        textInput.getText().toString() + ((Button) v).getText()));
-            }
-        });
-    }
     public void setRenewDisplayedDataAdapter(RenewDisplayedDataAdapter renewDisplayedDataAdapter){
         this.renewDisplayedDataAdapter = renewDisplayedDataAdapter;
     }
-    public void setButtonProcessor(ButtonProcessor buttonProcessor) {
+
+    public abstract void modifyInputStackProcessor(InputStackProcessor inputStackProcessor);
+
+    public void setButtonProcessor(InputStackProcessor inputStackProcessor) {
         setOnClickListener(v -> {
-            if (v instanceof Button) {
-                buttonProcessor.processButton((Button) v);
+            if (v instanceof CalculatorButton) {
+                modifyInputStackProcessor(inputStackProcessor);
                 renewDisplayedDataAdapter.run();
             }
         });

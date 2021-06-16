@@ -1555,6 +1555,7 @@ dimen notification_top_pad
 dimen notification_top_pad_large_text
 dimen radio_button_text
 dimen result_text_size
+dimen settings_btn_text
 dimen test_mtrl_calendar_day_cornerSize
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
@@ -1923,7 +1924,6 @@ id jumpToEnd
 id jumpToStart
 id labelGroup
 id labeled
-id land_constraint_layout
 id largeLabel
 id layout
 id left
@@ -2023,6 +2023,7 @@ id radioButtons
 id ratio
 id rectangles
 id result
+id return_button
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2053,6 +2054,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id settings_button
 id shortcut
 id showCustom
 id showHome
@@ -2213,6 +2215,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_settings
 layout button_linear_layout
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2230,7 +2233,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout landscape_layout
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2418,7 +2420,9 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string plus
+string return_button
 string search_menu_title
+string settings_btn
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

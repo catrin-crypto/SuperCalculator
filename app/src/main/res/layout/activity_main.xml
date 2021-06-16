@@ -19,7 +19,7 @@
         app:layout_constraintBottom_toTopOf="@id/result"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/settings_button" />
 
     <TextView
         android:id="@+id/result"
@@ -46,33 +46,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.86" />
 
-    <RadioGroup
-        android:id="@+id/radioButtons"
+    <Button
+        android:id="@+id/settings_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="end"
-        app:layout_constraintBottom_toTopOf="@id/operationField"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="351dp"
-        tools:layout_editor_absoluteY="24dp">
+        android:text="@string/settings_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/settings_btn_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <RadioButton
-            android:id="@+id/radioButtonLight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/light_theme"
-            android:textColor="@color/signs"
-            android:textSize="@dimen/radio_button_text"
-            android:textStyle="italic" />
-
-        <RadioButton
-            android:id="@+id/radioButtonNight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/night_theme"
-            android:textColor="@color/signs"
-            android:textSize="@dimen/radio_button_text"
-            android:textStyle="italic" />
-    </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
